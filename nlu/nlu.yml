@@ -1,0 +1,124 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - chào em
+    - hello em
+    - hi em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - bye bye
+    - tạm biệt em
+    - tạm biệt bot nhá
+
+- intent: ask_ability
+  examples: |
+    - em có thể làm những gì nhỉ
+    - em có chức năng gì?
+    - em giúp gì được anh không?
+    - em có thể giúp gì cho anh?
+    - em biết làm gì?
+    - em hỗ trợ anh như thế nào?
+    - cho anh xem các chức năng của em
+- intent: thank_you
+  examples: |
+    - cảm ơn em nhá
+    - thanks em nha
+    - cảm ơn nha
+    - good job
+    - thank you
+    - cảm ơn bot nha
+    - thanks bot
+    - cảm ơn
+    - thank you so much
+    - great! Thanks
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: account
+  examples: |
+    - Nạp tiền vào tài khoản
+    - Mở một tài khoản cá nhân
+    - Tài khoản ngân hàng
+    - Mở tài khoản
+    - Nạp tài khoản
+    - Khách hàng muốn tìm một tài khoản
+    - Giúp tôi tìm một tài khoản
+    - Một phiên bản của tài khoản
+    - Những loại tài khoản
+    - Hiện thị những loại tài khoản
+    - Hiển thị một số loại tài khoản
+    - Hãy cho tôi biết về những loại tài khoản hiện có
+    - In nhưng thông tin về tài khoản
+
+- intent: credit_card_info
+  examples: |
+    - choose a credit card
+    - chọn thẻ tín dụng
+    - The client wants to compare Credit Cards available in [Ottava](CITY)
+    - Khách hàng muốn so sánh với thẻ tín dụng có thể [Ottava](CITY)
+    - Cardholder
+    - Chủ thẻ
+    - Travel card
+    - Thẻ du lịch
+    - Rewards
+    - phần thưởng
+    - cashback
+    - Low Interest
+    - Lãi suất thấp
+    - Student Business card
+    - Thẻ học sinh

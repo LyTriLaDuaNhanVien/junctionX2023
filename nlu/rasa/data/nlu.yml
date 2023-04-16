@@ -1,0 +1,249 @@
+version: "3.1"
+nlu:
+- lookup: CARDHOLDER
+  examples: |
+    - Nguyễn Việt Anh
+    - Nguyen Viet Anh
+    - Khuat Quang Vinh
+    - Khuất Quang Vinh
+    - Trần Thanh Hà
+    - Tran Thanh Ha
+    - Bui My Linh
+    - Bùi Mỹ Linh
+    - Hoàng Ngọc Khánh
+    - Hoang Ngoc Khanh
+    - Le Duy Son
+    - Lê Duy Sơn
+    - Trần Ngọc Hiếu Nam
+    - Tran Ngoc Hiếu Nam
+    - Nguyễn Ngọc Anh
+    - Nguyen Ngoc Anh
+    - Cao Hoang Tung
+    - Cao Hoàng Tùng
+    - nguyen viet anh
+- lookup: BANK_NAME
+  examples: |
+    - BIDV
+    - TPBANK
+    - TP Bank
+    - MB Bank
+    - MBBank
+    - Vietinbank
+    - Techcombank
+    - ACB
+    - SHB
+    - SCB
+    - HDBank
+    - HD Bank
+    - Sacombank
+    - MSB
+    - Bac A Bank
+    - Tien Phong Bank
+    - Cong thuong
+    - cong thuong
+    - công thương
+    - quân đội
+    - quan doi
+    - ngoai thuong
+    - Ngoại thương
+    - Ngoại Thương
+    - viet a
+    - việt á
+    - Việt Á
+- intent: greet
+  examples: |
+    - chào em
+    - hello em
+    - hi em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - bye bye
+    - tạm biệt em
+    - tạm biệt bot nhá
+
+- intent: ask_ability
+  examples: |
+    - em có thể làm những gì nhỉ
+    - em có chức năng gì?
+    - em giúp gì được anh không?
+    - em có thể giúp gì cho anh?
+    - em biết làm gì?
+    - em hỗ trợ anh như thế nào?
+    - cho anh xem các chức năng của em
+
+- intent: thank_you
+  examples: |
+    - cảm ơn em nhá
+    - thanks em nha
+    - cảm ơn nha
+    - good job
+    - thank you
+    - cảm ơn bot nha
+    - thanks bot
+    - cảm ơn
+    - thank you so much
+    - great! Thanks
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: account
+  examples: |
+    - Nạp tiền vào tài khoản
+    - Mở một tài khoản cá nhân
+    - Tài khoản ngân hàng
+    - Mở tài khoản
+    - Nạp tài khoản
+    - Khách hàng muốn tìm một tài khoản
+    - Giúp tôi tìm một tài khoản
+    - Một phiên bản của tài khoản
+    - Những loại tài khoản
+    - Hiện thị những loại tài khoản
+    - Hiển thị một số loại tài khoản
+    - Hãy cho tôi biết về những loại tài khoản hiện có
+    - In nhưng thông tin về tài khoản
+
+- intent: credit_card_info
+  examples: |
+    - choose a credit card
+    - chọn thẻ tín dụng
+    - The client wants to compare Credit Cards available in [Ottava](CITY)
+    - Khách hàng muốn so sánh với thẻ tín dụng có thể [Ottava](CITY)
+    - Cardholder
+    - Chủ thẻ
+    - Travel card
+    - Thẻ du lịch
+    - Rewards
+    - phần thưởng
+    - cashback
+    - Low Interest
+    - Lãi suất thấp
+    - Student Business card
+    - Thẻ ngân hàng học sinh
+    - Thẻ tín dụng cho học sinh
+    - Thẻ tín dụng
+
+- intent: affirm
+  examples: |
+    - yes
+    - Có
+    - Đúng
+    - yeah
+    - Đương nhiên
+    - of course
+    - thank you, yeah
+    - Cảm ơn
+
+- intent: new_credit_card_related
+  examples: |
+    - Mở tài khoản mới
+    - Form mở tài khoản mới
+    - Mở tài khoản ngân hàng
+    - Form mở tài khoản ngân hàng
+    - Mở thẻ tín dụng mới
+    - Form đăng ký thẻ tín dụng
+    - Mở thẻ tín dụng mới
+
+- intent: human_handoff
+  examples: |
+    - Liên hệ cộng tác viên
+    - Chuyển hướng đến cộng tác viên
+    - CSKH
+    - Chăm sóc khách hàng
+    - Liên hệ chăm sóc khách hàng
+    - Liên hệ CSKH
+    - Nói chuyện với tư vấn viên
+    - Tư vấn viến
+    - Chuyển hướng tư vấn viên
+    - Liên hệ tư vấn viên
+    - Nói chuyện với tư vấn viến
+    - Liên hệ người thật
+    - Liên hệ con người
+    - Cham soc khach hang
+    - Tu van vien
+    - Chuyen huong cong tac vien
+    - Chuyen huong cham soc khach hang
+    - Lien he cskh
+    - Gap tu van vien
+    - Gặp tư vấn viên
+    - Noi chuyen voi tu van vien
+  
+- intent: transfer_money
+  examples: |
+    - Tôi muốn chuyển khoản đến [85691289]{"entity": "CREDITCARD_NUMBER"} chủ tài khoản [Nguyễn Việt Anh]{"entity": "CARDHOLDER"}
+    - Chuyển khoản [85691289]{"entity": "CREDITCARD_NUMBER"} chủ tài khoản [Nguyễn Việt Anh]{"entity": "CARDHOLDER"}
+    - Chuyển tiền tới số tài khoản [85691289]{"entity": "CREDITCARD_NUMBER"},[Nguyễn Việt Anh]{"entity": "CARDHOLDER"},[50000]{"entity": "AMOUNT"}
+    - Chuyển khoản [85691289]{"entity": "CREDITCARD_NUMBER"}ngân hàng [TPBank]{"entity": "BANK_NAME"},[Khuất Quang Vinh]{"entity": "CARDHOLDER"},[50000]{"entity": "AMOUNT"}
+    - [85691289]{"entity": "CREDITCARD_NUMBER"}ngân hàng ,[TPBank]{"entity": "BANK_NAME"},[Khuất Quang Vinh]{"entity": "CARDHOLDER"},[50000]{"entity": "AMOUNT"}
+    - Tôi muốn chuyển khoản đến [85691289]{"entity": "CREDITCARD_NUMBER"},[TPBank]{"entity": "BANK_NAME"},[Khuất Quang Vinh]{"entity": "CARDHOLDER"},[50000]{"entity": "AMOUNT"}
+    - Chuyển khoản [50k]{"entity": "AMOUNT"} tới [85691289]{"entity": "CREDITCARD_NUMBER"},[TPBank]{"entity": "BANK_NAME"}
+    - Chuyển khoản [50k]{"entity": "AMOUNT"} tới [85691289]{"entity": "CREDITCARD_NUMBER"},[TPBank]{"entity": "BANK_NAME"},[Trần Thanh Hà](CARDHOLDER)
+    - Chuyển tiền [50k]{"entity": "AMOUNT"} tới [85691289]{"entity": "CREDITCARD_NUMBER"},[TPBank]{"entity": "BANK_NAME"},[Trần Thanh Hà](CARDHOLDER)
+    - Chuyển [50k]{"entity": "AMOUNT"} tới [85691289]{"entity": "CREDITCARD_NUMBER"},[TPBank]{"entity": "BANK_NAME"},[Cao Hoàng Tùng](CARDHOLDER)
+    - Chuyển khoản [50k]{"entity": "AMOUNT"} tới [TPBank]{"entity": "BANK_NAME"},[85691289]{"entity": "CREDITCARD_NUMBER"},[Cao Hoàng Tùng](CARDHOLDER)
+    - Chuyển tiền [50k]{"entity": "AMOUNT"} tới [TPBank]{"entity": "BANK_NAME"},[85691289]{"entity": "CREDITCARD_NUMBER"},[Cao Hoàng Tùng](CARDHOLDER)
+    - Chuyển [50k]{"entity": "AMOUNT"} tới [TPBank]{"entity": "BANK_NAME"},[85691289]{"entity": "CREDITCARD_NUMBER"},[Nguyễn Ngọc Anh](CARDHOLDER)
+    - Trả [50k]{"entity": "AMOUNT"} [TPBank]{"entity": "BANK_NAME"},[85691289]{"entity": "CREDITCARD_NUMBER"},[Nguyễn Ngọc Anh](CARDHOLDER)
+    - Chuyển [500k]{"entity": "AMOUNT"} tới [Lê Duy Sơn](CARDHOLDER) ngân hàng [MB Bank]{"entity": "BANK_NAME"} số tài khoản [1321831923]{"entity": "CREDITCARD_NUMBER"}
+    - Chuyển [500k]{"entity": "AMOUNT"} tới [Lê Duy Sơn](CARDHOLDER) ngân hàng [TPBank]{"entity": "BANK_NAME"} số tài khoản [1321831923]{"entity": "CREDITCARD_NUMBER"}
+    - Chuyển [500k]{"entity": "AMOUNT"} tới [Trần Ngọc Hiếu Nam](CARDHOLDER) ngân hàng [Techcombank]{"entity": "BANK_NAME"} số tài khoản [1321831923]{"entity": "CREDITCARD_NUMBER"}
+    - Chuyển [500k]{"entity": "AMOUNT"} tới [Trần Ngọc Hiếu Nam](CARDHOLDER) ngân hàng [Công thương]{"entity": "BANK_NAME"} số tài khoản [1321831923]{"entity": "CREDITCARD_NUMBER"}
+    - Chuyển [500k]{"entity": "AMOUNT"} tới [Trần Ngọc Hiếu Nam](CARDHOLDER) ngân hàng [Ngoại thương]{"entity": "BANK_NAME"} số tài khoản [1321831923]{"entity": "CREDITCARD_NUMBER"}
+
+- intent: transfer_money
+  examples: |
+    - Lịch sử chuyển khoản
+    - Lịch sử giao dịch
+    - [10]{"entity": "AMOUNT"} giao dịch gần nhất
